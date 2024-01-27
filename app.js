@@ -13,7 +13,7 @@ app.use(express.json()) // middleware para parsear el body en formato JSON  (req
 // CORS Preflight
 // OPTIONS /movies
 
-const ACCEPTED_ORIGINS = ['http://localhost:3000', 'https://localhost:8080']
+const ACCEPTED_ORIGINS = ['http://localhost:8080', 'https://localhost:3000']
 
 app.get('/movies', (req, res) => {
   const origin = req.header('origin')
